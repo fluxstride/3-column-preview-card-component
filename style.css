@@ -1,0 +1,123 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    height: 100vh;
+    font-size: 16px;
+    font-family: poppins;
+}
+.container{
+    justify-self: center;
+    align-self: center;
+    display: grid;
+    grid-template-columns: repeat(3,257px);
+}
+h1{
+    color: #ffffff;
+}
+img{
+    width: 60px;
+    display: block;
+}
+p{
+    color: #ffffff;
+    font-size: .8em;
+    line-height: 1.7em;
+    margin-bottom: 7em;
+    letter-spacing: .2px;
+}
+.link-con{
+    
+}
+a{
+    display: inline-block;
+    border-radius: 20px;
+    text-decoration: none;
+    padding: .5em 1.5em;
+    background-color: #ffffff;
+    transition: all 200ms ease-in-out;
+    border: 2px solid #ffffff;
+    font-size: .8em;
+    
+}
+
+.col-inner{
+    padding: 2.7em 0 2.7em 2em;
+}
+
+.col1{
+    border-radius: 10px 0 0 10px;
+    background-color: #E28525;
+}
+.col1 a{
+    
+    color: #E28525;
+}
+.col1 a:hover {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    background-color: #E28525;
+}
+.col2 {
+    background-color: #016972;
+}
+.col2 a{
+    color: #016972;
+}
+.col2 a:hover {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    background-color: #016972;
+}
+.col3 {
+    border-radius: 0 10px 10px 0;
+    background-color: #00403F;
+}
+.col3 a{
+    color: #00403F;
+    
+}
+.col3 a:hover {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    background-color: #00403F;
+}
+
+@media (max-width: 700px){
+    .container {
+        padding: 3em 0;
+        justify-self: center;
+        align-self: center;
+        display: block;
+    }
+    .col-inner{
+        width: 300px;
+    }
+    .col1 {
+        border-radius: 10px 10px 0 0;
+        
+    }
+    .col3 {
+        border-radius: 0 0 10px 10px;
+    }
+    h1 {
+        color: #ffffff;
+    }
+
+    img {
+        display: block;
+    }
+
+    p {
+        color: #ffffff;
+        font-size: 1em;
+        line-height: 1.5em;
+        margin-bottom: 2em;
+    }
+    a{
+        font-size: 1em;
+    }
+}
